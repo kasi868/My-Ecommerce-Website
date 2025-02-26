@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./ecommerce.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <header>
+      <div class="logo"><a href="#">EcOmMeRcE StoreZ</a></div>
+      <div class="menu">
+        <a href="#">
+          <ion-icon name="close" class="close"></ion-icon>
+        </a>
+  
+        <ul>
+          <li><a href="#" class="under">Home</a></li>
+          <li><a href="Categories.html" class="under">Categories</a></li>
+          <li><a href="Contact.html" class="under">Contact Us</a></li>
+          <li><a href="about.html" class="under">About Us</a></li>
+          <li><a href="login.html" class="under">Login</a></li>
+        </ul>
+      </div>
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search products..." />
+        <button id="search-btn">
+          <i class="bx bx-search"></i>
+        </button>
+        <div id="suggestions"></div>
+      </div>            
+      <div class="heading">
+        <ul>
+          <li><a href="#" class="under">Home</a></li>
+          <li><a href="Categories.html" class="under">Categories</a></li>
+          <li><a href="Contact.html" class="under">Contact Us</a></li>
+          <li><a href="about.html" class="under">About Us</a></li>
+          <li><a href="login.html" class="under">Login</a></li>
+        </ul>
+      </div>
+      <div class="heading1">
+        <ion-icon name="menu" class="ham"></ion-icon>
+      </div>
+    </header>
+    <section>
+      <div class="section">
+        <div class="section1">
+          <div class="img-slider">
+            <img src="https://images.pexels.com/photos/6347888/pexels-photo-6347888.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="img">
+            <img src="https://images.pexels.com/photos/3962294/pexels-photo-3962294.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="img">
+            <img src="https://images.pexels.com/photos/2292953/pexels-photo-2292953.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" class="img">
+            <img src="https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="img">
+            <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="img">
+          </div>
+  
+        </div>
+        <div class="section2">
+          <div class="container">
+            <div class="items">
+              <div class="img img1"><img src="https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Product 1"></div>
+              <div class="name"><b>SHOES</b></div>
+              <div class="price">$5</div>
+              <div class="info">BRUTON Stylish Sneakers Casual Shoes for Men's & Boy's- White</div>
+                <div class="button-container">
+                  <button onclick="addToCart('Product 1', 5)"><b>Add to Cart</b></button>
+                </div>
+            </div>
+            <div class="items">
+              <div class="img img2"><img src="https://images.pexels.com/photos/3649765/pexels-photo-3649765.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Product 2"></div>
+              <div class="name"><b>MEN's T-SHIRT</b></div>
+              <div class="price">$6.34</div>
+              <div class="info">NEW LOOK DENIM MEN JACKET FOR BOYS/MEN</div>
+              <div class="button-container">
+                <button onclick="addToCart('Product 2', 6.34)"><b>Add to Cart</b></button>
+              </div>
+            </div>
+            <div class="items">
+              <div class="img img3"><img src="https://imgs.search.brave.com/V8VFh5lYjJCfBRrrQbFDU8eHFgN864Tww5VdOBGHDiQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTEwcFhsWEY1cUwu/anBn" alt="Product 3"></div>
+              <div class="name"><b>JEANS</b></div>
+              <div class="price">$9</div>
+              <div class="info">Urbano Fashion Men's Slim Fit Washed Jeans Stretchable</div>
+              <div class="button-container">
+                <button onclick="addToCart('Product 3', 9)"><b>Add to Cart</b></button>
+              </div>
+            </div>
+            <div class="items">
+              <div class="img img1"><img src="https://m.media-amazon.com/images/I/71BO4dM49AL._SX522_.jpg" alt="Product 4"></div>
+              <div class="name"><b>WATCH</b></div>
+              <div class="price">$9.1</div>
+              <div class="info">Fossil Machine Stainless Steel Chronograph Unisex Black Dial Watch Fs4682Ie</div>
+              <div class="button-container">
+                <button onclick="addToCart('Product 4', 9.1)"><b>Add to Cart</b></button>
+              </div>
+            </div>
+            <div class="items">
+              <div class="img img1"><img src="https://m.media-amazon.com/images/I/61JvFLHZ6NL._SX679_.jpg" alt="Product 5"></div>
+              <div class="name"><b>SMART PHONE</b></div>
+              <div class="price">$20</div>
+              <div class="info">iPhone 16 Pro 128 GB: 5G Mobile Phone with Camera Control, 4K 120 fps</div>
+              <div class="button-container">
+                  <button onclick="addToCart('Product 5', 20)"><b>Add to Cart</b></button>
+              </div>
+            </div>
+            <div class="items">
+              <div class="img img1"><img src="https://images.pexels.com/photos/5552789/pexels-photo-5552789.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Product 6"></div>
+              <div class="name"><b>TELEVISION</b></div>
+              <div class="price">$18</div>
+              <div class="info">Samsung 108 cm (43 inches) 4K Ultra HD Smart LED TV UA43DUE70BKLXL (Black)</div>
+              <div class="button-container">
+                  <button onclick="addToCart('Product 6', 18)"><b>Add to Cart</b></button>
+              </div>
+            </div>
+            <div class="items">
+              <div class="img img1"><img src="https://images.pexels.com/photos/4295985/pexels-photo-4295985.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Product 7"></div>
+              <div class="name"><b>HOODIES</b></div>
+              <div class="price">$6.7</div>
+              <div class="info">Men's Casual Fleece Hoodie Sweatshirt</div>
+              <div class="button-container">
+                  <button onclick="addToCart('Product 7', 6.7)"><b>Add to Cart</b></button>
+              </div>
+            </div>
+            <div class="items">
+              <div class="img img1"><img src="https://as1.ftcdn.net/v2/jpg/12/48/33/42/1000_F_1248334216_OyJ8qXufV9fAhVOsofin40T9r6S8UPFf.jpg" alt="Product 8"></div>
+              <div class="name"><b>DINNER SET</b></div>
+              <div class="price">$10</div>
+              <div class="info">The Earth Store Brown Spiral Set of 21 Piece Ceramic Dinner Set</div>
+              <div class="button-container">
+                  <button onclick="addToCart('Product 8', 10)"><b>Add to Cart</b></button>
+              </div>
+            </div>
+            <div class="items">
+              <div class="img img1"><img src="https://images.pexels.com/photos/6463348/pexels-photo-6463348.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Product 9"></div>
+              <div class="name"><b>BLANKETS</b></div>
+              <div class="price">$9.9</div>
+              <div class="info">Woolen Blanket Warm and Super Soft Heavy Weight Single Bed Blankets for Heavy Winter</div>
+              <div class="button-container">
+                  <button onclick="addToCart('Product 9', 9.9)"><b>Add to Cart</b></button>
+              </div>
+            </div>
+            <div class="items">
+              <div class="img img1"><img src="https://images.pexels.com/photos/2659939/pexels-photo-2659939.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Product 10"></div>
+              <div class="name"><b>LAPTOP</b></div>
+              <div class="price">$99</div>
+              <div class="info">ASUS TUF Gaming A15(16GB RAM/512GB SSD/NVIDIA Geforce RTX 3050/Windows 11)</div>
+              <div class="button-container">
+                  <button onclick="addToCart('Product 10', 99)"><b>Add to Cart</b></button>
+              </div>
+            </div>
+            <div class="items">
+              <div class="img img1"><img src="https://imgs.search.brave.com/3CWRy3tJvtBy_9IQgQvYv1lRdczVtUmCZ-dvd_zo7mQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzEwLzE2LzMyLzQ4/LzM2MF9GXzEwMTYz/MjQ4MjFfRzQ0cnVE/czZYWjRqdmk2WFpp/WWVJa2dLemRsakZR/S0MuanBn" alt="Product 11"></div>
+              <div class="name"><b>MICROWAVE</b></div>
+              <div class="price">$30</div>
+              <div class="info">Panasonic 25L Solo Microwave Oven (NN-ST310QBFG, Black, 85 Auto Cook Menus)</div>
+              <div class="button-container">
+                  <button onclick="addToCart('Product 11', 30)"><b>Add to Cart</b></button>
+              </div>
+            </div>
+            <div class="items">
+              <div class="img img1"><img src="https://imgs.search.brave.com/4vxcmvAL_9l6UnP5y18wky1U38bh5u1DxpLTBuCo-Dk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTU5/MjkyODc4L3Bob3Rv/L2NvZmZlZS1tYWtl/ci5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9U3BzeURVWGRB/VDJwc1A3WFVqT0R1/aThYVDMzRVFKYlJv/clJVODFJQXNEbz0" alt="Product 12"></div>
+              <div class="name"><b>COFFEE MAKER</b></div>
+              <div class="price">$29.7</div>
+              <div class="info">Philips HD7430/90 1000W Drip Coffee Maker</div>
+              <div class="button-container">
+                  <button onclick="addToCart('Product 12', 29.7)"><b>Add to Cart</b></button>
+              </div>
+            </div>
+            <div class="items">
+              <div class="img img1"><img src="https://images.pexels.com/photos/6606354/pexels-photo-6606354.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Product 13"></div>
+              <div class="name"><b>BED</b></div>
+              <div class="price">$100</div>
+              <div class="info">WoodenStreet™ Harper Wooden Double Bed, Queen Size, with Storage</div>
+              <div class="button-container">
+                  <button onclick="addToCart('Product 13', 100)"><b>Add to Cart</b></button>
+              </div>
+            </div>
+            <div class="items">
+              <div class="img img1"><img src="https://imgs.search.brave.com/OYZfsCln4xXsu29A7dCFKVkHU74QOrTTkT5P6Ll4CUE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA4LzcyLzg2Lzc3/LzM2MF9GXzg3Mjg2/Nzc3N182aHdjenZj/UFlxYjJtYkdtdkJj/YmNXQVdzbVVQMkRI/ai5qcGc" alt="Product 14"></div>
+              <div class="name"><b>AIR CONDITIONER</b></div>
+              <div class="price">$78</div>
+              <div class="info">O General Asga24Futa Split 3 Star 2 Ton Air Conditioner - White</div>
+              <div class="button-container">
+                  <button onclick="addToCart('Product 14', 78)"><b>Add to Cart</b></button>
+              </div>
+            </div>
+            <div class="items">
+              <div class="img img1"><img src="https://images.pexels.com/photos/5834/nature-grass-leaf-green.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Product 15"></div>
+              <div class="name"><b>BOOK</b></div>
+              <div class="price">$9</div>
+              <div class="info">The Art of Not Overthinking : Believing in Yourself and Building Your Dream Life</div>
+              <div class="button-container">
+                  <button onclick="addToCart('Product 15', 9)"><b>Add to Cart</b></button>
+              </div>
+            </div>
+            <div class="items">
+              <div class="img img1"><img src="https://images.pexels.com/photos/4339598/pexels-photo-4339598.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Product 16"></div>
+              <div class="name"><b>BAG</b></div>
+              <div class="price">$36.5</div>
+              <div class="info">American Tourister Spacious Interiors for Men & Women - Black</div>
+              <div class="button-container">
+                  <button onclick="addToCart('Product 16', 36.5)"><b>Add to Cart</b></button>
+              </div>
+            </div>
+            <div class="items">
+              <div class="img img1"><img src="https://imgs.search.brave.com/SbqtKt-BhVGgKHQVPb3XZ9p_aExORiJA2ffEbbGIAcw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTE3V28yVEFIU0wu/anBn" alt="Product 17"></div>
+              <div class="name"><b>SAREES</b></div>
+              <div class="price">$25.6</div>
+              <div class="info">Women's Fancy Sarees Saree</div>
+              <div class="button-container">
+                  <button onclick="addToCart('Product 17', 25.6)"><b>Add to Cart</b></button>
+              </div>
+            </div>
+            <div class="items">
+              <div class="img img1"><img src="https://images.pexels.com/photos/5816934/pexels-photo-5816934.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Product 18"></div>
+              <div class="name"><b>WASHING MACHINE</b></div>
+              <div class="price">$56</div>
+              <div class="info">Godrej 6 Kg Eco-Wash With Steam Wash Fully-Automatic Front Load Washing Machine</div>
+              <div class="button-container">
+                  <button onclick="addToCart('Product 18', 56)"><b>Add to Cart</b></button>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+  
+    </section>
+    <footer>
+      <div class="footer0">
+        <h1>EcOmMeRcE StoreZ</h1>
+      </div>
+      <div class="footer1 ">
+        Connect with us at
+        <div class="social-media">
+          <a href="#"><i class='bx bxl-google' ></i></a>
+          <a href="#"><i class='bx bxl-facebook' ></i></a>
+          <a href="#"><i class='bx bxl-github' ></i></a>
+          <a href="#"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+      </div>
+      <div class="footer2">
+        <div class="product">
+          <div class="heading">Products</div>
+          <div class="div">Sell your Products</div>
+          <div class="div">Advertise</div>
+          <div class="div">Pricing</div>
+          <div class="div">Product Buisness</div>
+  
+        </div>
+        <div class="services">
+          <div class="heading">Services</div>
+          <div class="div">Return</div>
+          <div class="div">Cash Back</div>
+          <div class="div">Affiliate Marketing</div>
+          <div class="div">Others</div>
+        </div>
+        <div class="Company">
+          <div class="heading">Company</div>
+          <div class="div">Complaint</div>
+          <div class="div">Careers</div>
+          <div class="div">Affiliate Marketing</div>
+          <div class="div">Support</div>
+        </div>
+        <div class="Get Help">
+          <div class="heading">Get Help</div>
+          <div class="div">Help Center</div>
+          <div class="div">Privacy Policy</div>
+          <div class="div">Terms</div>
+          <div class="div">Login</div>
+        </div>
+      </div>
+      <div class="footer3">Copyright © <h4>EcOmMeRcE StoreZ</h4> 2025</div>
+    </footer>
+  
+  </body>
+  
+  </html>
+</html>
